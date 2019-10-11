@@ -1,0 +1,9 @@
+<div *ngIf="activeUser == 'visitante'">
+    <app-card *ngFor="let pokemon of pokemons" [title]="pokemon.name"></app-card>
+</div>
+
+<div class="login" *ngIf="activeUser != 'visitante'">
+    <a class="link" routerLink='login'>IR PARA A PÁGINA DE LOGIN </a>
+   
+    <img class="pikachu" src="../../assets/pikachu.png"/>
+</div>
